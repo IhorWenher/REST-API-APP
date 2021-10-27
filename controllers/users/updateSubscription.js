@@ -1,8 +1,10 @@
 const { User } = require("../../models");
 
-const getUser = async(req, res) => {
+const updateSubscription = async(req, res) => {
     const { _id } = req.user;
-    const userInfo = await User.findById(_id);
+
+    const userInfo = await User.findByIdAndUpdate(_id, req.body, { new: true });
+
     res.status(200).json({
         status: "success",
         code: 200,
@@ -13,4 +15,4 @@ const getUser = async(req, res) => {
     });
 };
 
-module.exports = getUser;
+module.exports = updateSubscription;

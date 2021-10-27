@@ -1,15 +1,11 @@
-/* eslint-disable indent */
-/* eslint-disable eol-last */
-const signup = require('./signup')
-const login = require('./login')
-const logout = require('./logout')
-const getUser = require('./getUser')
-const updateSubscription = require('./updateSubscription')
+const signup = require("./signup");
+const login = require("./login");
+const getUser = require("./getUser");
+const logout = require("./logout");
 
 module.exports = {
     signup,
     login,
-    logout,
     getUser,
-    updateSubscription
-}
+    logout,
+};
