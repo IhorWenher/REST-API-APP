@@ -1,5 +1,7 @@
 Routes description
 
+https://node-rest-api-app-1.herokuapp.com/
+
 //auth
 
 - POST api/auth/signup
