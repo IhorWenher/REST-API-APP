@@ -2,21 +2,21 @@ Routes description
 
 //auth
 
-- POST api/auth/users/signup
+- POST api/auth/signup
   {
   "email": "123@ukr.net",
   "password": "1234567"
   }
 
-- POST api/auth/users/login
+- POST api/auth/login
   {
   "email": "123@ukr.net",
   "password": "1234567"
   }
 
-- GET api/auth/users/current
+- GET api/auth/current
 
-- GET api/auth/users/logout
+- GET api/auth/logout
 
 //users
 
