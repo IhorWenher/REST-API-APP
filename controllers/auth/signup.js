@@ -26,7 +26,7 @@ const signup = async (req, res) => {
   const mail = {
     to: email,
     subject: "Confirm your registration",
-    html: `<a target="_blank" href="http://localhost:3000/api/users/verify/${verifyToken}">Click to continue registration </a>`,
+    html: `<a target="_blank" href="https://node-rest-api-app-1.herokuapp.com/api/users/verify/${verifyToken}">Click to continue registration</a>`,
   };
 
   sendEmail(mail);
